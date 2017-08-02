@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
-<VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" 
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-            Type="Project" Version="3.2.0">
-  
+<VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            Type="Project" Version="3.0.0">
   <TemplateData>
     <Name>WAF Application</Name>
     <Description>WPF Application Framework (WAF) based application</Description>
