@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            Type="Project" Version="3.2.0">
+  
+  <TemplateData>
+    <Name>WAF Application</Name>
+    <Description>WPF Application Framework (WAF) based application</Description>
+    <Icon>WafApplication.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>WPF</ProjectSubType>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <SortOrder>10</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WafApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <LocationField>Enabled</LocationField>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>    
+  </TemplateData>
+  <TemplateContent>
+    <Project File="WafApplication.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true">App.xaml.cs</ProjectItem>
+
+      <Folder Name="Properties">
+        <ProjectItem ReplaceParameters="true">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false">CodeAnalysisDictionary.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="false">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false">Settings.Settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Settings.Designer.cs</ProjectItem>
+      </Folder>
+
+      <Folder Name="Domain">
+        <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
+      </Folder>
+
+      <Folder Name="Applications">
+        <ProjectItem ReplaceParameters="true">Controllers\ApplicationController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">ViewModels\ShellViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Views\IShellView.cs</ProjectItem>
+      </Folder>
+      
+      <Folder Name="Presentation">
+        <ProjectItem ReplaceParameters="true">Resources\ImageResources.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="false">Resources\Images\Application.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Views\ShellWindow.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Views\ShellWindow.xaml.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="WafApplication.Template507A7FD8-D82D-494C-9301-D39C1CF0EBDD" Version="3.2.1.0" Language="en-US" Publisher="jbe" />
+    <DisplayName>WAF Project Template</DisplayName>
+    <Description xml:space="preserve">Visual Studio project template that simplifies the development of a WPF Application Framework (WAF) based application.</Description>
+    <MoreInfo>https://github.com/jbe2277/waf</MoreInfo>
+    <License>License.rtf</License>
+    <GettingStartedGuide>https://github.com/jbe2277/waf</GettingStartedGuide>
+    <Icon>VSIXProject_small.png</Icon>
+    <PreviewImage>VSIXProject_large.png</PreviewImage>
+    <Tags>waf;wpf;xaml;ui;presentation;mvvm</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[11.0,]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0,]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="WafApplication" d:TargetPath="|WafApplication;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>
